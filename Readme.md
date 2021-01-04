@@ -5,8 +5,9 @@ WebdriverIO is Javascript based test automation framework built over nodeJs. It 
 
 
  ## How to run tests?
- npx wdio run wdio.conf.js 
+ 
+    npx wdio run wdio.conf.js 
 
 
 __References__ 
-* [webdriverIO](https://webdriver.io/)
+* [webdriverIO ](https://webdriver.io/)
