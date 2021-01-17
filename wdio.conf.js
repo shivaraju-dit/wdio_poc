@@ -1,4 +1,5 @@
 exports.config = {
+    envrn: process.env.ENVIRONMENT,
     //
     // ====================
     // Runner Configuration
@@ -17,7 +18,8 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+      //  './test/specs/*.js'
+        './test/specs/google_test.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -67,9 +69,7 @@ exports.config = {
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'warn',
-    screenshotPath: './errorShots/',
-
-    //
+    screenshotPath: './errorShots/',    
     // Set specific log levels per logger
     // loggers:
     // - webdriver, webdriverio
@@ -109,7 +109,7 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
-    
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks.html
@@ -143,7 +143,7 @@ exports.config = {
         ui: 'bdd',
         timeout: 60000
     },
-       //
+    //
     // =====
     // Hooks
     // =====
