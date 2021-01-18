@@ -5,8 +5,8 @@ describe('Policy Journey', () => {
     browser.url(`http://Bs-local.com:3000/ux1/review`)
     browser.pause(4000);
     // const pcnd = $('[data-qa="pncd"]=Protected NCD')
-    // pcnd.waitForExist()
-    // expect(pcnd).toHaveText('Protected NCD')
+    pcnd.waitForExist()
+    expect(pcnd).should('Protected NCD')
     // const pcndText = $('[data-qa="pncd"]~p')
     // browser.pause(3000);
     // //expect(pcndText).toHaveText('We will protect your 13 years no claims discount')
