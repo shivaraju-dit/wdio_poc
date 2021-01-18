@@ -3,26 +3,32 @@ var browserstack = require('browserstack-local');
 exports.config = {
     user: process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
     key: process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACC_KEY',
-  
+   
+
+    
     updateJob: false,
     specs: [
-      //'./test/specs/PolicyJourney.e2e.js'
+      './test/specs/PolicyJourney.e2e.js'
     //  './test/specs/single.js'
-   './test/specs/google_test.js'
+   //'./test/specs/google_test.js'
     ],
     exclude: [],
   
     maxInstances: 10,
     commonCapabilities: {
-      name: 'local_test',
-      build: 'webdriver-browserstack',
+    
+      name: process.env.BROWSERSTACK_BUILD_NAME,
+      build: process.env.BROWSERSTACK_BUILD,
       'browserstack.local': true
     },
   
     capabilities: [
       {
-        platform: "MAC",
-        // os_version : "Big Sur",
+      name: process.env.BROWSERSTACK_BUILD_NAME,
+      build: process.env.BROWSERSTACK_BUILD,
+        "os" : "OS X",
+       // platform: "MAC",
+        osVersion : "Big Sur",
         browser: 'Chrome',
         //name: 'local_test',
         build: 'webdriver-poc',
@@ -32,7 +38,19 @@ exports.config = {
     //   { browser: 'firefox' },
     //   { browser: 'internet explorer' },
     //   { browser: 'safari' }
-],
+
+{
+  
+  "osVersion" : "13",
+"deviceName" : "iPhone 11",
+"realMobile" : "true",
+"local" : "true",
+build: 'webdriver-poc_mobile',
+
+"browserName" : "iPhone",
+}
+
+  ],
   
     logLevel: 'warn',
     coloredLogs: true,

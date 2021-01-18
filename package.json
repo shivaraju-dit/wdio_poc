@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx wdio run wdio.conf.js --params.environments=BStack",
     "test:bs": "npx wdio run conf/bs.conf.js",
-    "test:percy": "percy exec -- npm run test"
+    "test:percy": "percy exec -- npm run test:bs"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,6 @@
     "module": "^1.2.5",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
-    
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",

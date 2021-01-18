@@ -2,18 +2,18 @@
 describe('Policy Journey', () => {
   
     it('Buy a Policy', () => {
-    browser.url(`http://localhost:3000/ux1/review`)
-    browser.pause(3000);
+    browser.url(`http://Bs-local.com:3000/ux1/review`)
+    browser.pause(4000);
     // const pcnd = $('[data-qa="pncd"]=Protected NCD')
     // pcnd.waitForExist()
-    //expect(pcnd).toHaveText('Protected NCD')
+    // expect(pcnd).toHaveText('Protected NCD')
     // const pcndText = $('[data-qa="pncd"]~p')
     // browser.pause(3000);
     // //expect(pcndText).toHaveText('We will protect your 13 years no claims discount')
     // const mlCover = $('[data-qa="lCover"]')
     // browser.pause(3000);
     // //expect(mlCover).toHaveText('Motor Legal Cover')
-    // browser.saveScreenshot('./screenshots/'+'1_ReviewPage.png')
+    browser.saveScreenshot('./screenshots/'+'1_ReviewPage.png')
     const payButton = $('div[data-qa="buyBtnFooter"] button')
     payButton.click()
     // Buy page
