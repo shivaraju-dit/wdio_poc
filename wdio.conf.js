@@ -19,7 +19,8 @@ exports.config = {
     //
     specs: [
       //  './test/specs/*.js'
-        './test/specs/google_test.js'
+      //  './test/specs/google_test.js'
+      './test/specs/PolicyJourney.e2e.js'
     ],
     // Patterns to exclude.
     exclude: [
