@@ -4,7 +4,7 @@ describe('Policy Journey', () => {
     it('Buy a Policy', () => {
    // browser.url(`http://Bs-local.com:3000/ux1/review`)
     browser.url(`http://localhost:3000/ux1/review`)
-   //browser.pause(3000);
+      browser.pause(2000);
     // const pcnd = $('[data-qa="pncd"]=Protected NCD')
     // pcnd.waitForExist()
     // expect(pcnd).should('Protected NCD')
@@ -14,9 +14,6 @@ describe('Policy Journey', () => {
     // const mlCover = $('[data-qa="lCover"]')
     // browser.pause(3000);
     //expect(mlCover).toHaveText('Motor Legal Cover')
-    //browser.saveScreenshot('./screenshots/'+'1_ReviewPage.png')
-   
-   
     const payButton = $('div[data-qa="buyBtnFooter"] button')
     percySnapshot(browser,'1_ReviewPage.png')
     payButton.click()
@@ -30,7 +27,7 @@ describe('Policy Journey', () => {
     payNow.click()   
     // drive page
       const policyNo = $('[data-qa="drivePolicyNumber"]')
-    policyNo.waitForExist()
+   // policyNo.waitForExist()
    // expect(policyNo).toHaveText('PL0321789')
    //browser.pause(3000);
     const coverStartOn = $('[data-qa="drivePolicyStartDate"]')
@@ -39,8 +36,8 @@ describe('Policy Journey', () => {
   //  expect(coverStartOn).toHaveText('15 December 2020')
     const crossSellText = $('h6=Home Insurance')
     browser.saveScreenshot('./screenshots/'+'3_DrivePage.png')  
-     
-    browser.pause(3000)  
+    policyNo.waitForExist()
+    browser.pause(2000)  
     });
 });
 
