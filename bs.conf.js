@@ -24,8 +24,8 @@ exports.config = {
   
     capabilities: [
       {
-      name: process.env.BROWSERSTACK_BUILD_NAME,
-      build: process.env.BROWSERSTACK_BUILD,
+      // name: process.env.BROWSERSTACK_BUILD_NAME,
+      // build: process.env.BROWSERSTACK_BUILD,
         "os" : "OS X",
        // platform: "MAC",
         osVersion : "Big Sur",
@@ -98,7 +98,13 @@ build: 'webdriver-poc_mobile',
         // Make percySnapshot available as a global variable in all wdio tests
         global.percySnapshot = percySnapshot;
     },
-
+    afterTest: function (test, context, { error, result, duration, passed, retries }) {
+      if(passed) {
+        browser.executeScript('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed","reason": "Assertions passed"}}');
+      } else {
+        browser.executeScript('browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed","reason": "At least 1 assertion failed"}}');
+      }
+    },
     // Code to stop browserstack local after end of test
     onComplete: function (capabilties, specs) { 
         return new Promise(function(resolve, reject){

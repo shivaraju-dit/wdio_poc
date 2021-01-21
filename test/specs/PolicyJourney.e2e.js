@@ -2,8 +2,8 @@ const { percySnapshot } = require('@percy/webdriverio')
 describe('Policy Journey', () => {
   
     it('Buy a Policy', () => {
-   // browser.url(`http://Bs-local.com:3000/ux1/review`)
-    browser.url(`http://localhost:3000/ux1/review`)
+   browser.url(`http://Bs-local.com:3000/ux1/review`)
+    //browser.url(`http://localhost:3000/ux1/review`)
       browser.pause(2000);
     // const pcnd = $('[data-qa="pncd"]=Protected NCD')
     // pcnd.waitForExist()

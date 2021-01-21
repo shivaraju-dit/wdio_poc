@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npx wdio run wdio.conf.js --params.environments=BStack",
     "test:bs": "npx wdio run conf/bs.conf.js",
-    "test:percy": "percy exec -- npm run test:bs"
+    "test:percy": "percy exec -- npm run test:bs",
+    "test:all": "npx wdio run bs2.conf.js"
   },
   "repository": {
     "type": "git",
