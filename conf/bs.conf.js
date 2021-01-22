@@ -49,6 +49,19 @@ exports.config = {
         'browserstack.local': true, 	
     }	
   ],	
+  reporters: [
+    'spec',
+    //'dot',
+      [
+       'junit',
+       {
+         outputDir: './reports',
+         outputFileFormat: function (options) {
+           return `results-${new Date().getTime()}.xml`;
+         },
+       },
+     ],
+   ],
   logLevel: 'warn',	
   coloredLogs: true,	
   screenshotPath: './errorShots/',	
