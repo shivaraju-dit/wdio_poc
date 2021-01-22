@@ -13,9 +13,9 @@ exports.config = {
   commonCapabilities: {	
     name: process.env.BROWSERSTACK_BUILD_NAME,	
     build: process.env.BROWSERSTACK_BUILD,	
-    'browserstack.local': true,
-    browserstackLocal = process.env.BROWSERSTACK_LOCAL,
-   browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER
+    'browserstack.local': true
+   // browserstackLocal = process.env.BROWSERSTACK_LOCAL,
+   //browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER
   },	
   capabilities: [	
    {	
