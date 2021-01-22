@@ -13,7 +13,7 @@ exports.config = {
   commonCapabilities: {	
     name: process.env.BROWSERSTACK_BUILD_NAME,	
     build: process.env.BROWSERSTACK_BUILD,	
-    'browserstack.local': true.
+    'browserstack.local': true,
     browserstackLocal = process.env.BROWSERSTACK_LOCAL,
    browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER
   },	
@@ -32,15 +32,15 @@ exports.config = {
         name: 'local_test_osx',	
       'browserstack.local': true,	
   },	
-    {  
-    "osVersion" : "13",
-    "deviceName" : "iPhone 11",
-    "realMobile" : "true",
-    "local" : "true",
-    build: 'webdriver-poc_mobile',
-    "browserName" : "iPhone",
-    build: 'webdriver-poc4'
-  }
+  //   {  
+  //   "osVersion" : "13",
+  //   "deviceName" : "iPhone 11",
+  //   "realMobile" : "true",
+  //   "local" : "true",
+  //   build: 'webdriver-poc_mobile',
+  //   "browserName" : "iPhone",
+  //   build: 'webdriver-poc4'
+  // }
  , {	
         "os_version" : "10.0",	
         "device" : "Samsung Galaxy Note 20 Ultra",	
