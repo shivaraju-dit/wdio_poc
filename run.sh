@@ -1,5 +1,5 @@
 export ENVIRONMENT='BStack'
-export PERCY_TOKEN=a8a26b142140cc733c8be27df1f1bbab05f9ca8ef1ff41f6b2fc14943c461872
+export PERCY_TOKEN=b2f3731a8ea5fdce70906c638ac318563599ed21379bc579de2b2d88253522b2
 export BROWSERSTACK_USERNAME=<Your_Username>
 export BROWSERSTACK_ACCESS_KEY=<Your_Access_Key>
 node execute.js
