@@ -1,12 +1,1 @@
 
-
-Mon Jan 18 2021 11:34:28 GMT+0000 (Greenwich Mean Time) -- [WARNING] Discovered proxy settings in your environment. Use the --pac-file argument to specify the absolute path to your PAC file. For more proxy options, refer to the Local Testing documentation  (https://www.browserstack.com/local-testing/binary-params).
-
-Mon Jan 18 2021 11:34:28 GMT+0000 (Greenwich Mean Time) -- You can disable this warning by using the --disable-proxy-discovery argument while using the Local binary.
-
-Mon Jan 18 2021 11:34:28 GMT+0000 (Greenwich Mean Time) -- [WARNING] Detected instance of BrowserStackLocal Application, running in onlyAutomate mode to avoid port clash
-Mon Jan 18 2021 11:34:30 GMT+0000 (Greenwich Mean Time) -- [SUCCESS] You can now access your local server(s) in our remote browser
-
-Mon Jan 18 2021 11:34:30 GMT+0000 (Greenwich Mean Time) -- Press Ctrl-C to exit
-
-
