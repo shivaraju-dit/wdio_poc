@@ -33,15 +33,15 @@ exports.config = {
         name: 'local_test_osx',	
       'browserstack.local': true,	
   },	
-    {  
-    "osVersion" : "13",
-    "deviceName" : "iPhone 11",
-    "realMobile" : "true",
-    "local" : "true",
-    build: 'webdriver-poc_mobile',
-    "browserName" : "iPhone",
-    build: 'webdriver-poc4'
-  }
+  //   {  
+  //   "osVersion" : "13",
+  //   "deviceName" : "iPhone 11",
+  //   "realMobile" : "true",
+  //   "local" : "true",
+  //   build: 'webdriver-poc_mobile',
+  //   "browserName" : "iPhone",
+  //   build: 'webdriver-poc4'
+  // }
  , {	
         "os_version" : "10.0",	
         "device" : "Samsung Galaxy Note 20 Ultra",	
