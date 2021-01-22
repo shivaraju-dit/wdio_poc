@@ -52,7 +52,7 @@ exports.config = {
     }	
   ],	
   reporters: [
-    //'spec',
+    'spec',
     //'dot',
       [
        'junit',
