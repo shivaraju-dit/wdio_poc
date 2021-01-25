@@ -30,7 +30,7 @@ exports.config = {
         osVersion : "Big Sur",	
         browser: 'Chrome',	
         build: 'webdriver-poc_demo',
-        name: 'local_test_osx',	
+        //name: 'local_test_osx',	
       'browserstack.local': true,	
   },	
     {  
@@ -40,6 +40,13 @@ exports.config = {
     "local" : "true",
     "browserName" : "iPhone",
     build: 'webdriver-poc_demo'
+  }, 
+ {
+      "osVersion" : "12",
+      "deviceName" : "iPhone XS Max",
+      "realMobile" : "true",
+      "local" : "true",
+      "browserName" : "iPhone XS",
   },
   {	
         "os_version" : "10.0",	
@@ -47,7 +54,7 @@ exports.config = {
         "real_mobile" : "true",	
         "browserName" : "Android",	
         build: 'webdriver-poc_demo',
-        name: 'local_test_android',	
+       // name: 'local_test_android',	
         'browserstack.local': true, 	
     }	
   ],	
