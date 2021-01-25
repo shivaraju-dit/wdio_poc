@@ -23,31 +23,30 @@ exports.config = {
         browser: 'chrome',	
         name: 'local_test_win',	
         'browserstack.local': true,	
-      //  build: 'webdriver-poc4',	
+        build: 'webdriver-poc_demo'	
   },	
   {	
         "os" : "OS X",	
         osVersion : "Big Sur",	
         browser: 'Chrome',	
-     //   build: 'webdriver-poc4',	
+        build: 'webdriver-poc_demo',
         name: 'local_test_osx',	
       'browserstack.local': true,	
   },	
-  //   {  
-  //   "osVersion" : "13",
-  //   "deviceName" : "iPhone 11",
-  //   "realMobile" : "true",
-  //   "local" : "true",
-  //   build: 'webdriver-poc_mobile',
-  //   "browserName" : "iPhone",
-  //   build: 'webdriver-poc4'
-  // },
+    {  
+    "osVersion" : "13",
+    "deviceName" : "iPhone 11",
+    "realMobile" : "true",
+    "local" : "true",
+    "browserName" : "iPhone",
+    build: 'webdriver-poc_demo'
+  },
   {	
         "os_version" : "10.0",	
         "device" : "Samsung Galaxy Note 20 Ultra",	
         "real_mobile" : "true",	
         "browserName" : "Android",	
-     //   build: 'webdriver-poc4',	
+        build: 'webdriver-poc_demo',
         name: 'local_test_android',	
         'browserstack.local': true, 	
     }	
