@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npx wdio run wdio.conf.js",
     "test:bs": "npx wdio run conf/bs.conf.js",
-    "test:percy": "percy exec -- npm run test:bs"
+    "percy": "npx wdio run conf/percy.conf.js",
+    "test:percy": "percy exec -- npm run percy"
   },
   "repository": {
     "type": "git",
