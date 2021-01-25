@@ -11,20 +11,15 @@ exports.config = {
   ],	
   exclude: [],	
   commonCapabilities: {	
-    name: process.env.BROWSERSTACK_BUILD_NAME,	
-    build: process.env.BROWSERSTACK_BUILD,	
+    build: process.env.BROWSERSTACK_BUILD_NAME,
+    name: process.env.BROWSERSTACK_BUILD, 
     'browserstack.local': true
-
-   // browserstackLocal = process.env.BROWSERSTACK_LOCAL,
-   //browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER
   },	
   capabilities: [		
   {	
         "os" : "OS X",	
         osVersion : "Big Sur",	
-        browser: 'Chrome',	
-     //   build: 'webdriver-poc4',	
-        name: 'local_test_osx',	
+        browser: 'Chrome',		
       'browserstack.local': true,	
   }
   ],	

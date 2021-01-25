@@ -4,6 +4,10 @@ exports.config = {
   user: process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',	
   key: process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACC_KEY',	
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ce952790... build name
   updateJob: false,	
   specs: [	
    // './test/specs/google_test.js',	
@@ -11,26 +15,21 @@ exports.config = {
   ],	
   exclude: [],	
   commonCapabilities: {	
-    name: process.env.BROWSERSTACK_BUILD_NAME,	
-    build: process.env.BROWSERSTACK_BUILD,	
+    build: process.env.BROWSERSTACK_BUILD_NAME,
+    name: process.env.BROWSERSTACK_BUILD, 
     'browserstack.local': true
-
    // browserstackLocal = process.env.BROWSERSTACK_LOCAL,
    //browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER
   },	
   capabilities: [	
    {	
         browser: 'chrome',	
-        name: 'local_test_win',	
         'browserstack.local': true,	
-        build: 'webdriver-poc_demo'	
   },	
   {	
         "os" : "OS X",	
         osVersion : "Big Sur",	
         browser: 'Chrome',	
-        build: 'webdriver-poc_demo',
-        //name: 'local_test_osx',	
       'browserstack.local': true,	
   },	
     {  
@@ -39,7 +38,11 @@ exports.config = {
     "realMobile" : "true",
     "local" : "true",
     "browserName" : "iPhone",
+<<<<<<< HEAD
     build: 'webdriver-poc_demo'
+=======
+    'browserstack.local': true,	
+>>>>>>> ce952790... build name
   }, 
  {
       "osVersion" : "12",
@@ -53,8 +56,6 @@ exports.config = {
         "device" : "Samsung Galaxy Note 20 Ultra",	
         "real_mobile" : "true",	
         "browserName" : "Android",	
-        build: 'webdriver-poc_demo',
-       // name: 'local_test_android',	
         'browserstack.local': true, 	
     }	
   ],	
