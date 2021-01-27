@@ -40,7 +40,7 @@ exports.config = {
     "realMobile" : "true",
     "local" : "true",
     "browserName" : "iPhone",
-    //project : process.env.BROWSERSTACK_PROJECT,
+    project : process.env.BROWSERSTACK_PROJECT,
     build : process.env.BROWSERSTACK_BUILD_NAME,
     name : process.env.BROWSERSTACK_BUILD 
   }, 
