@@ -14,9 +14,9 @@ exports.config = {
   ],	
   exclude: [],	
   commonCapabilities: {	
-    project: process.env.BROWSERSTACK_PROJECT,
-    build: process.env.BROWSERSTACK_BUILD,
-    name: process.env.BROWSERSTACK_BUILD_NAME, 
+    // project: process.env.BROWSERSTACK_PROJECT,
+    // build: process.env.BROWSERSTACK_BUILD,
+    // name: process.env.BROWSERSTACK_BUILD_NAME, 
     'browserstack.local': true
    // browserstackLocal = process.env.BROWSERSTACK_LOCAL,
    //browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER
@@ -24,13 +24,17 @@ exports.config = {
   capabilities: [	
    {	
         browser: 'chrome',	
-        'browserstack.local': true,	
+        project : process.env.BROWSERSTACK_PROJECT,
+        build : process.env.BROWSERSTACK_BUILD_NAME,
+        name : process.env.BROWSERSTACK_BUILD
   },	
   {	
         "os" : "OS X",	
         osVersion : "Big Sur",	
         browser: 'Chrome',	
-      'browserstack.local': true,	
+        project : process.env.BROWSERSTACK_PROJECT,
+        build : process.env.BROWSERSTACK_BUILD_NAME,
+        name : process.env.BROWSERSTACK_BUILD, 
   },	
     {  
     "osVersion" : "13",
@@ -38,7 +42,9 @@ exports.config = {
     "realMobile" : "true",
     "local" : "true",
     "browserName" : "iPhone",
-    'browserstack.local': true,	
+    project : process.env.BROWSERSTACK_PROJECT,
+    build : process.env.BROWSERSTACK_BUILD_NAME,
+    name : process.env.BROWSERSTACK_BUILD, 
   }, 
  {
       "osVersion" : "12",
@@ -46,14 +52,18 @@ exports.config = {
       "realMobile" : "true",
       "local" : "true",
       "browserName" : "iPhone XS",
-      'browserstack.local': true,	
+      project : process.env.BROWSERSTACK_PROJECT,
+      build : process.env.BROWSERSTACK_BUILD_NAME,
+      name : process.env.BROWSERSTACK_BUILD, 
   },
   {	
         "os_version" : "10.0",	
         "device" : "Samsung Galaxy Note 20 Ultra",	
         "real_mobile" : "true",	
         "browserName" : "Android",	
-        'browserstack.local': true, 	
+        project : process.env.BROWSERSTACK_PROJECT,
+        build : process.env.BROWSERSTACK_BUILD_NAME,
+        name : process.env.BROWSERSTACK_BUILD, 
     }	
   ],	
   reporters: [
