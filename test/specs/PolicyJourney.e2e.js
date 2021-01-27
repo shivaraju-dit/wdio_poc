@@ -18,8 +18,9 @@ describe('Policy Journey', () => {
     browser.saveScreenshot('./screenshots/'+'2_BuyPage.png')
     percySnapshot(browser,'2_BuyPage.png')
     browser.pause(1000)
-    const payNow = $('[data-qa="payNowButton"]')
-    payNow.click()   
+    //const payNow = $('[data-qa="payNowButton"]')
+    const payNow = $('div.MuiContainer-root.MuiContainer-fixed.MuiContainer-maxWidthXs > div > div > button')
+    payNow.click() 
     // drive page
       const policyNo = $('[data-qa="drivePolicyNumber"]')
   
