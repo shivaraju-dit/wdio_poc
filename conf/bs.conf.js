@@ -13,8 +13,8 @@ exports.config = {
   ],	
   exclude: [],	
   commonCapabilities: {	
-    build: process.env.BROWSERSTACK_BUILD_NAME,
-    name: process.env.BROWSERSTACK_BUILD, 
+    build: process.env.BROWSERSTACK_BUILD,
+    name: process.env.BROWSERSTACK_BUILD_NAME, 
     'browserstack.local': true
    // browserstackLocal = process.env.BROWSERSTACK_LOCAL,
    //browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER
