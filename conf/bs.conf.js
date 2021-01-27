@@ -4,9 +4,6 @@ exports.config = {
   user: process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',	
   key: process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACC_KEY',	
 
-
-
-
   updateJob: false,	
   specs: [	
    // './test/specs/google_test.js',	
@@ -14,56 +11,59 @@ exports.config = {
   ],	
   exclude: [],	
   commonCapabilities: {	
-    // project: process.env.BROWSERSTACK_PROJECT,
-    // build: process.env.BROWSERSTACK_BUILD,
-    // name: process.env.BROWSERSTACK_BUILD_NAME, 
+    project: process.env.BROWSERSTACK_PROJECT,
+    build: process.env.BROWSERSTACK_BUILD,
+    name: process.env.BROWSERSTACK_BUILD_NAME, 
     'browserstack.local': true
-   // browserstackLocal = process.env.BROWSERSTACK_LOCAL,
-   //browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER
   },	
   capabilities: [	
    {	
-        browser: 'chrome',	
-        project : process.env.BROWSERSTACK_PROJECT,
-        build : process.env.BROWSERSTACK_BUILD_NAME,
-        name : process.env.BROWSERSTACK_BUILD
-  },	
+      'browserstack.local': true,
+      browser: 'chrome',	
+      project : process.env.BROWSERSTACK_PROJECT,
+      build : process.env.BROWSERSTACK_BUILD_NAME,
+      name : process.env.BROWSERSTACK_BUILD ,   
+  },
   {	
+        'browserstack.local': true,
         "os" : "OS X",	
         osVersion : "Big Sur",	
         browser: 'Chrome',	
         project : process.env.BROWSERSTACK_PROJECT,
         build : process.env.BROWSERSTACK_BUILD_NAME,
-        name : process.env.BROWSERSTACK_BUILD, 
+        name : process.env.BROWSERSTACK_BUILD
   },	
-    {  
+    {   
+    'browserstack.local': true,
     "osVersion" : "13",
     "deviceName" : "iPhone 11",
     "realMobile" : "true",
     "local" : "true",
     "browserName" : "iPhone",
-    project : process.env.BROWSERSTACK_PROJECT,
+    //project : process.env.BROWSERSTACK_PROJECT,
     build : process.env.BROWSERSTACK_BUILD_NAME,
-    name : process.env.BROWSERSTACK_BUILD, 
+    name : process.env.BROWSERSTACK_BUILD 
   }, 
  {
-      "osVersion" : "12",
+    'browserstack.local': true,    
+    "osVersion" : "12",
       "deviceName" : "iPhone XS Max",
       "realMobile" : "true",
       "local" : "true",
       "browserName" : "iPhone XS",
       project : process.env.BROWSERSTACK_PROJECT,
       build : process.env.BROWSERSTACK_BUILD_NAME,
-      name : process.env.BROWSERSTACK_BUILD, 
+      name : process.env.BROWSERSTACK_BUILD 
   },
   {	
+        'browserstack.local': true,
         "os_version" : "10.0",	
         "device" : "Samsung Galaxy Note 20 Ultra",	
         "real_mobile" : "true",	
         "browserName" : "Android",	
         project : process.env.BROWSERSTACK_PROJECT,
         build : process.env.BROWSERSTACK_BUILD_NAME,
-        name : process.env.BROWSERSTACK_BUILD, 
+        name : process.env.BROWSERSTACK_BUILD
     }	
   ],	
   reporters: [
