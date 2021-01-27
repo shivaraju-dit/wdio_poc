@@ -4,10 +4,7 @@ exports.config = {
   user: process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',	
   key: process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACC_KEY',	
 
-<<<<<<< HEAD
-=======
 
->>>>>>> ce952790... build name
   updateJob: false,	
   specs: [	
    // './test/specs/google_test.js',	
@@ -38,11 +35,7 @@ exports.config = {
     "realMobile" : "true",
     "local" : "true",
     "browserName" : "iPhone",
-<<<<<<< HEAD
-    build: 'webdriver-poc_demo'
-=======
     'browserstack.local': true,	
->>>>>>> ce952790... build name
   }, 
  {
       "osVersion" : "12",
@@ -50,6 +43,7 @@ exports.config = {
       "realMobile" : "true",
       "local" : "true",
       "browserName" : "iPhone XS",
+      'browserstack.local': true,	
   },
   {	
         "os_version" : "10.0",	
