@@ -11,27 +11,23 @@ exports.config = {
   ],	
   exclude: [],	
   commonCapabilities: {	
-    project: process.env.BROWSERSTACK_PROJECT,
-    build: process.env.BROWSERSTACK_BUILD,
-    name: process.env.BROWSERSTACK_BUILD_NAME, 
-    'browserstack.local': true
-  },	
+     },	
   capabilities: [	
    {	
       'browserstack.local': true,
       browser: 'chrome',	
-      // project : process.env.BROWSERSTACK_PROJECT,
-      // build : process.env.BROWSERSTACK_BUILD_NAME,
-      // name : process.env.BROWSERSTACK_BUILD ,   
+      project : process.env.BROWSERSTACK_PROJECT,
+      build : process.env.BROWSERSTACK_BUILD_NAME,
+      name : process.env.BROWSERSTACK_BUILD    
   },
   {	
         'browserstack.local': true,
         "os" : "OS X",	
         osVersion : "Big Sur",	
         browser: 'Chrome',	
-        // project : process.env.BROWSERSTACK_PROJECT,
-        // build : process.env.BROWSERSTACK_BUILD_NAME,
-        // name : process.env.BROWSERSTACK_BUILD
+        project : process.env.BROWSERSTACK_PROJECT,
+        build : process.env.BROWSERSTACK_BUILD_NAME,
+        name : process.env.BROWSERSTACK_BUILD
   },	
     {   
     'browserstack.local': true,
@@ -40,9 +36,9 @@ exports.config = {
     "realMobile" : "true",
     "local" : "true",
     "browserName" : "iPhone",
-    // project : process.env.BROWSERSTACK_PROJECT,
-    // build : process.env.BROWSERSTACK_BUILD_NAME,
-    // name : process.env.BROWSERSTACK_BUILD 
+    project : process.env.BROWSERSTACK_PROJECT,
+    build : process.env.BROWSERSTACK_BUILD_NAME,
+    name : process.env.BROWSERSTACK_BUILD 
   }, 
  {
     'browserstack.local': true,    
@@ -51,9 +47,9 @@ exports.config = {
       "realMobile" : "true",
       "local" : "true",
       "browserName" : "iPhone XS",
-      // project : process.env.BROWSERSTACK_PROJECT,
-      // build : process.env.BROWSERSTACK_BUILD_NAME,
-      // name : process.env.BROWSERSTACK_BUILD 
+      project : process.env.BROWSERSTACK_PROJECT,
+      build : process.env.BROWSERSTACK_BUILD_NAME,
+      name : process.env.BROWSERSTACK_BUILD 
   },
   {	
         'browserstack.local': true,
