@@ -60,7 +60,18 @@ exports.config = {
         project : process.env.BROWSERSTACK_PROJECT,
         build : process.env.BROWSERSTACK_BUILD_NAME,
         name : process.env.BROWSERSTACK_BUILD
-    }	
+    }	,
+    {
+      "osVersion" : "14",
+      "deviceName" : "iPad Air 4",
+      "realMobile" : "true",
+      "local" : "true",
+      "browserName" : "iPad",
+      project : process.env.BROWSERSTACK_PROJECT,
+      build : process.env.BROWSERSTACK_BUILD_NAME,
+      name : process.env.BROWSERSTACK_BUILD
+
+    }
   ],	
   reporters: [
     'spec',
