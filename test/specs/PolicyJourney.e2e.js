@@ -7,6 +7,7 @@ describe('Policy Journey', () => {
       browser.pause(2000);
    
     percySnapshot(browser,'1_ReviewPage.png')
+    browser.saveScreenshot('./screenshots/'+'1_ReviewPage.png')
     browser.pause(1000)
     const payButton = $('div[data-qa="buyBtnFooter"] button')
     payButton.click()
