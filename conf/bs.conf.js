@@ -1,9 +1,10 @@
-
 var browserstack = require('browserstack-local');	
 
 exports.config = {	
   user: process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',	
   key: process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACC_KEY',	
+
+
 
 
   updateJob: false,	
@@ -22,32 +23,37 @@ exports.config = {
   },	
   capabilities: [	
    {	
-    browserName: 'chrome',	
+        browser: 'chrome',	
+        'browserstack.local': true,	
   },	
   {	
         "os" : "OS X",	
         osVersion : "Big Sur",	
-        browserName: 'Chrome'
+        browser: 'Chrome',	
+      'browserstack.local': true,	
   },	
     {  
     "osVersion" : "13",
     "deviceName" : "iPhone 11",
     "realMobile" : "true",
     "local" : "true",
-    "browserName" : "iPhone"
+    "browserName" : "iPhone",
+    'browserstack.local': true,	
   }, 
  {
       "osVersion" : "12",
       "deviceName" : "iPhone XS Max",
       "realMobile" : "true",
       "local" : "true",
-      "browserName" : "iPhone XS"
+      "browserName" : "iPhone XS",
+      'browserstack.local': true,	
   },
   {	
         "os_version" : "10.0",	
         "device" : "Samsung Galaxy Note 20 Ultra",	
         "real_mobile" : "true",	
-        "browserName" : "Android"
+        "browserName" : "Android",	
+        'browserstack.local': true, 	
     }	
   ],	
   reporters: [
