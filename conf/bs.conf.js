@@ -13,6 +13,7 @@ exports.config = {
   ],	
   exclude: [],	
   commonCapabilities: {	
+    project: process.env.BROWSERSTACK_PROJECT,
     build: process.env.BROWSERSTACK_BUILD,
     name: process.env.BROWSERSTACK_BUILD_NAME, 
     'browserstack.local': true
@@ -21,37 +22,32 @@ exports.config = {
   },	
   capabilities: [	
    {	
-        browser: 'chrome',	
-        'browserstack.local': true,	
+    browserName: 'chrome',	
   },	
   {	
         "os" : "OS X",	
         osVersion : "Big Sur",	
-        browser: 'Chrome',	
-      'browserstack.local': true,	
+        browserName: 'Chrome'
   },	
     {  
     "osVersion" : "13",
     "deviceName" : "iPhone 11",
     "realMobile" : "true",
     "local" : "true",
-    "browserName" : "iPhone",
-    'browserstack.local': true,	
+    "browserName" : "iPhone"
   }, 
  {
       "osVersion" : "12",
       "deviceName" : "iPhone XS Max",
       "realMobile" : "true",
       "local" : "true",
-      "browserName" : "iPhone XS",
-      'browserstack.local': true,	
+      "browserName" : "iPhone XS"
   },
   {	
         "os_version" : "10.0",	
         "device" : "Samsung Galaxy Note 20 Ultra",	
         "real_mobile" : "true",	
-        "browserName" : "Android",	
-        'browserstack.local': true, 	
+        "browserName" : "Android"
     }	
   ],	
   reporters: [
