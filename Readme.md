@@ -21,5 +21,5 @@ WebdriverIO is Javascript based test automation framework built over nodeJs. It 
 
 __References__ 
 * [webdriverIO ](https://webdriver.io/)
-* * [percy ](https://percy.io/)
+* [percy ](https://percy.io/)
 
