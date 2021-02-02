@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx wdio run wdio.conf.js",
+    "test:docker": "npx wdio run conf/docker.conf.js",
     "test:bs": "npx wdio run conf/bs.conf.js",
     "percy": "npx wdio run conf/percy.conf.js",
     "test:percy": "percy exec -- npm run percy"
@@ -52,6 +53,7 @@
     "percy": "^0.28.6",
     "prettier": "^2.2.1",
     "requests": "^0.3.0",
-    "wdio-chromedriver-service": "^6.0.4"
+    "wdio-chromedriver-service": "^6.0.4",
+    "wdio-docker-service": "^3.1.0"
   }
 }
