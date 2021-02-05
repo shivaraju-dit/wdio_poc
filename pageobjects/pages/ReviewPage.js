@@ -5,26 +5,26 @@ class ReviewPage extends Base {
 	get payButton() {
 		return $('div[data-qa="buyBtnFooter"] button')
 	}
-	get pncd(){
+	get pncd() {
 		return $('[data-qa="pncd"]~p')
 	}
-	get lCover(){
+	get lCover() {
 		return $('[data-qa="lCover"]')
 	}
-	
+
 	clickPayButton() {
 		this.payButton.waitForExist()
 		percySnapshot(browser, '1_ReviewPage.png')
 		this.captureScreenShot('1_ReviewPage.png')
 		this.payButton.click()
 	}
-	checkPNCDText(text){
+	checkPNCDText(text) {
 		this.pncd.waitForExist()
-		this.validateText(this.pncd,text)
+		this.validateText(this.pncd, text)
 	}
-	checkLCoverText(text){
+	checkLCoverText(text) {
 		this.lCover.waitForExist()
-		this.validateText(this.lCover,text)
+		this.validateText(this.lCover, text)
 	}
 }
 export default new ReviewPage()

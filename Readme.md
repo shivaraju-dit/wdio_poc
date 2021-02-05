@@ -2,7 +2,7 @@
 
 WebdriverIO is Javascript based test automation framework built over nodeJs. It is an open-source project developed for the automation testing community. WebdriverIO is extendible, compatible, feature-rich, and easy to install.
 
-### Note: In this branch adding Page objects and tests will run from specs folder   
+### Note: In this branch tests will run from specs folder using page objects
       
 
  ## How to run tests locally?
