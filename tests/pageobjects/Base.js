@@ -3,7 +3,7 @@ class Base {
 		browser.pause(3000)
 	}
 	captureScreenShot(filename) {
-		browser.saveScreenshot('./screenshots/' + filename)
+		browser.saveScreenshot('./tests/screenshots/' + filename)
 		return filename
 	}
 	validateText(selector, text) {

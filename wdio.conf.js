@@ -20,7 +20,7 @@ exports.config = {
     specs: [
       //  './test/specs/*.js'
       //  './test/specs/google_test.js'
-      './specs/PolicyJourney.e2e.js'
+      './tests/specs/PolicyJourney.e2e.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -137,7 +137,7 @@ exports.config = {
           [
            'junit',
            {
-             outputDir: './reports',
+             outputDir: './tests/reports',
              outputFileFormat: function (options) {
                return `results-${new Date().getTime()}.xml`;
              },

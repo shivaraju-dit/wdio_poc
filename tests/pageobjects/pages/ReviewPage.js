@@ -1,4 +1,5 @@
 import Base from '../Base'
+import reviewdata from '../Resources/review.page.data'
 const { percySnapshot } = require('@percy/webdriverio')
 
 class ReviewPage extends Base {
@@ -14,8 +15,8 @@ class ReviewPage extends Base {
 
 	clickPayButton() {
 		this.payButton.waitForExist()
-		percySnapshot(browser, '1_ReviewPage.png')
-		this.captureScreenShot('1_ReviewPage.png')
+		percySnapshot(browser, reviewdata.reviewPageScreenshotLabel)
+		this.captureScreenShot(reviewdata.reviewPageScreenshotLabel)
 		this.payButton.click()
 	}
 	checkPNCDText(text) {

@@ -1,4 +1,5 @@
 import Base from '../Base'
+import buydata from '../Resources/buy.page.data'
 const { percySnapshot } = require('@percy/webdriverio')
 
 class BuyPage extends Base {
@@ -11,8 +12,8 @@ class BuyPage extends Base {
 
 	clickPayNowButton() {
 		this.payNowButton.waitForExist()
-		percySnapshot(browser, '2_BuyPage.png')
-		this.captureScreenShot('2_BuyPage.png')
+		percySnapshot(browser, buydata.buyPageScreenShotLabel)
+		this.captureScreenShot(buydata.buyPageScreenShotLabel)
 		this.payNowButton.click()
 	}
 }

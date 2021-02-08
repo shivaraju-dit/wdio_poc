@@ -1,4 +1,5 @@
 import Base from '../Base'
+import drivedata from '../Resources/drive.page.data'
 const { percySnapshot } = require('@percy/webdriverio')
 
 class DrivePage extends Base {
@@ -10,8 +11,8 @@ class DrivePage extends Base {
 	}
 	checkPolicyNo(text) {
 		this.policyNo.waitForExist()
-		percySnapshot(browser, '3_DrivePage.png')
-		this.captureScreenShot('3_DrivePage.png')
+		percySnapshot(browser, drivedata.drivePageScreenShotLabel)
+		this.captureScreenShot(drivedata.drivePageScreenShotLabel)
 		this.validateText(this.policyNo, text)
 	}
 	checkCoverStartDate(text) {
