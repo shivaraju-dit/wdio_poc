@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Policy_Journey" timestamp="2021-02-08T17:56:14" time="3.161" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Policy Journey"/>
+      <property name="capabilities" value="chrome.88_0_4324_146.macosx"/>
+      <property name="file" value="./tests/specs/PolicyJourney.e2e.js"/>
+    </properties>
+    <testcase classname="chrome.88_0_4324_146.macosx.Policy_Journey" name="Buy_a_Policy" time="3.16">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/url - {"url":"http://localhost:3000/ux1/review"}
+RESULT: {"url":"http://localhost:3000/ux1/review"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element - {"using":"css selector","value":"[data-qa=\"pncd\"]~p"}
+RESULT: {"using":"css selector","value":"[data-qa=\"pncd\"]~p"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/elements - {"using":"css selector","value":"[data-qa=\"pncd\"]~p"}
+RESULT: {"using":"css selector","value":"[data-qa=\"pncd\"]~p"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element - {"using":"css selector","value":"[data-qa=\"pncd\"]~p"}
+RESULT: {"using":"css selector","value":"[data-qa=\"pncd\"]~p"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/elements - {"using":"css selector","value":"[data-qa=\"pncd\"]~p"}
+RESULT: {"using":"css selector","value":"[data-qa=\"pncd\"]~p"}
+COMMAND: GET /session/d144f1ad7a1f0a876b2108b69167006a/element/5284e69b-4d78-4513-a921-d2baa4a5e1df/text - {}
+RESULT: {}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element - {"using":"css selector","value":"[data-qa=\"lCover\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"lCover\"]"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/elements - {"using":"css selector","value":"[data-qa=\"lCover\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"lCover\"]"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element - {"using":"css selector","value":"[data-qa=\"lCover\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"lCover\"]"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/elements - {"using":"css selector","value":"[data-qa=\"lCover\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"lCover\"]"}
+COMMAND: GET /session/d144f1ad7a1f0a876b2108b69167006a/element/0a7a23a0-8ac4-47f7-9473-69d52c20d1a7/text - {}
+RESULT: {}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element - {"using":"css selector","value":"div[data-qa=\"buyBtnFooter\"] button"}
+RESULT: {"using":"css selector","value":"div[data-qa=\"buyBtnFooter\"] button"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/elements - {"using":"css selector","value":"div[data-qa=\"buyBtnFooter\"] button"}
+RESULT: {"using":"css selector","value":"div[data-qa=\"buyBtnFooter\"] button"}
+COMMAND: GET /session/d144f1ad7a1f0a876b2108b69167006a/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element - {"using":"css selector","value":"div[data-qa=\"buyBtnFooter\"] button"}
+RESULT: {"using":"css selector","value":"div[data-qa=\"buyBtnFooter\"] button"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element/9a2a1e6d-9918-472a-9edc-97c33510b454/click - {}
+RESULT: {}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element - {"using":"css selector","value":"[data-qa=\"payNowButton\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"payNowButton\"]"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/elements - {"using":"css selector","value":"[data-qa=\"payNowButton\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"payNowButton\"]"}
+COMMAND: GET /session/d144f1ad7a1f0a876b2108b69167006a/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element - {"using":"css selector","value":"[data-qa=\"payNowButton\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"payNowButton\"]"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element/0319a96e-2045-4427-aa79-945584d308c3/click - {}
+RESULT: {}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element - {"using":"css selector","value":"[data-qa=\"drivePolicyNumber\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"drivePolicyNumber\"]"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/elements - {"using":"css selector","value":"[data-qa=\"drivePolicyNumber\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"drivePolicyNumber\"]"}
+COMMAND: GET /session/d144f1ad7a1f0a876b2108b69167006a/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element - {"using":"css selector","value":"[data-qa=\"drivePolicyNumber\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"drivePolicyNumber\"]"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/elements - {"using":"css selector","value":"[data-qa=\"drivePolicyNumber\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"drivePolicyNumber\"]"}
+COMMAND: GET /session/d144f1ad7a1f0a876b2108b69167006a/element/c301eeba-ae66-4eee-bd19-87b914d889c5/text - {}
+RESULT: {}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/element - {"using":"css selector","value":"[data-qa=\"drivePolicyStartDate\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"drivePolicyStartDate\"]"}
+COMMAND: POST /session/d144f1ad7a1f0a876b2108b69167006a/elements - {"using":"css selector","value":"[data-qa=\"drivePolicyStartDate\"]"}
+RESULT: {"using":"css selector","value":"[data-qa=\"drivePolicyStartDate\"]"}
+COMMAND: GET /session/d144f1ad7a1f0a876b2108b69167006a/element/84b4389e-eeb6-451c-b45c-4b5a59667dbc/text - {}
+RESULT: {}
+COMMAND: DELETE /session/d144f1ad7a1f0a876b2108b69167006a - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,3 +1,6 @@
 node_modules
 ToDo
 
+browserstack.err
+local.log
+.vscode/launch.json
